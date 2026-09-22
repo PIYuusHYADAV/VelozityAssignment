@@ -29,7 +29,7 @@ io.on('connection', async socket => {
   io.emit('presence:update', online.size);
   socket.on('disconnect', () => { online.delete(user.id); io.emit('presence:update', online.size); });
 });
-
+asmdliasdioaipajdjpasojdpampdpnpapnfoai
 app.get('/health', (_req,res)=>res.json({ok:true}));
 app.use('/api/auth', authRoutes); app.use('/api/admin', adminRoutes()); app.use('/api/activity', activityRoutes()); app.use('/api/projects', projectRoutes(io)); app.use('/api/tasks', taskRoutes(io)); app.use('/api/notifications', notificationRoutes()); app.use('/api/dashboard', dashboardRoutes(()=>online.size));
 app.use(errorHandler);
